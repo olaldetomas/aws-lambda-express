@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "sls:deploy": "sls deploy",
+    "sls:offline": "sls offline",
+    "sls:package": "sls package",
+    "start": "npm run build && serverless offline",
+    "build:ts": "rm -rf dist && tsc"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.11.0",
+    "esbuild": "^0.24.0",
+    "eslint": "^9.13.0",
+    "prettier": "^3.3.3",
+    "serverless": "^4.4.7",
+    "serverless-offline": "^14.3.3",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}

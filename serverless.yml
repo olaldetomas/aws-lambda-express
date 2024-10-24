@@ -1,0 +1,22 @@
+service: serverless-express
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+
+custom:
+  esbuild:
+    platform: 'node'
+    target: node16
+    sourcemap: linked
+
+functions:
+  app:
+    handler: src/handler.handler
+    events:
+      - httpApi:
+          path: '/{proxy+}'
+          method: '*'

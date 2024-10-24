@@ -1,0 +1,10 @@
+node_modules
+
+# Serverless
+.serverless
+
+# Output
+dist
+
+*-lock.yaml
+.DS_Store
